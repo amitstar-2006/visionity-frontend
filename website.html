@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VISIONITY | Beyond Limits. Into Possibilities.</title>
+  <meta name="description" content="VISIONITY delivers ultra-clear modern web architecture, bespoke corporate websites, high-yield e-commerce, and resilient ERP billing systems in Tangi, Cuttack, Odisha.">
+
+  <!-- Google Fonts Fallback & Modern Display Stacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@600;700;800&family=Syncopate:wght@700&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Local Tailwind build -->
+  <link rel="stylesheet" href="tailwind-output.css">
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="selection:bg-oceanbrand-500/35 selection:text-white relative min-h-screen font-semibold">
+
+  <!-- Top Real-Time Scroll Progress Indicator -->
+  <div id="scroll-progress-bar"></div>
+
+  <!-- Ambient Deep Sapphire Textured Canvas & Volumetric Light Engine -->
+  <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden ice-canvas-background mesh-grid tactile-noise-layer">
+    <div class="ambient-light-beams"></div>
+    <canvas id="liquid-ripple-canvas" class="absolute inset-0 w-full h-full opacity-40"></canvas>
+  </div>
+
+  <!-- Floating Right-Side Navigation HUD -->
+  <aside class="fixed right-5 top-1/2 -translate-y-1/2 z-40 hidden xl:flex flex-col items-center gap-3 liquid-glass-pill py-4 px-2.5 rounded-full shadow-2xl border border-oceanbrand-400/30" aria-label="Page Chapter Navigation">
+    <div class="text-[9px] font-mono font-bold text-oceanbrand-400 uppercase tracking-tighter mb-1 writing-mode-vertical">
+      STAGE
+    </div>
+    
+    <a href="#home" data-nav-tab="home" data-target="home" class="hud-dot-link group relative flex items-center justify-center p-1.5" aria-label="Jump to Home">
+      <span class="hud-dot-indicator w-2.5 h-2.5 rounded-full bg-oceanbrand-400 scale-125 ring-4 ring-oceanbrand-400/30 transition-all duration-300"></span>
+      <span class="hud-dot-label absolute right-7 px-2.5 py-1 rounded-lg bg-iceblue-100 border border-oceanbrand-400/40 text-white text-[10px] font-bold tracking-wider opacity-0 -translate-x-2 transition-all duration-200 pointer-events-none whitespace-nowrap shadow-lg">01 // ORIGIN</span>
+    </a>
+
+    <a href="#services" data-nav-tab="services" data-target="services" class="hud-dot-link group relative flex items-center justify-center p-1.5" aria-label="Jump to Services">
+      <span class="hud-dot-indicator w-2.5 h-2.5 rounded-full bg-iceblue-400/50 transition-all duration-300"></span>
+      <span class="hud-dot-label absolute right-7 px-2.5 py-1 rounded-lg bg-iceblue-100 border border-oceanbrand-400/40 text-white text-[10px] font-bold tracking-wider opacity-0 -translate-x-2 transition-all duration-200 pointer-events-none whitespace-nowrap shadow-lg">04 // SERVICES</span>
+    </a>
+
+    <a href="#process" data-nav-tab="process" data-target="process" class="hud-dot-link group relative flex items-center justify-center p-1.5" aria-label="Jump to Process">
+      <span class="hud-dot-indicator w-2.5 h-2.5 rounded-full bg-iceblue-400/50 transition-all duration-300"></span>
+      <span class="hud-dot-label absolute right-7 px-2.5 py-1 rounded-lg bg-iceblue-100 border border-oceanbrand-400/40 text-white text-[10px] font-bold tracking-wider opacity-0 -translate-x-2 transition-all duration-200 pointer-events-none whitespace-nowrap shadow-lg">06 // PIPELINE</span>
+    </a>
+
+    <a href="#team" data-nav-tab="team" data-target="team" class="hud-dot-link group relative flex items-center justify-center p-1.5" aria-label="Jump to Leadership">
+      <span class="hud-dot-indicator w-2.5 h-2.5 rounded-full bg-iceblue-400/50 transition-all duration-300"></span>
+      <span class="hud-dot-label absolute right-7 px-2.5 py-1 rounded-lg bg-iceblue-100 border border-oceanbrand-400/40 text-white text-[10px] font-bold tracking-wider opacity-0 -translate-x-2 transition-all duration-200 pointer-events-none whitespace-nowrap shadow-lg">07 // THE MINDS</span>
+    </a>
+
+    <a href="#metrics-impact" data-nav-tab="metrics-impact" data-target="metrics-impact" class="hud-dot-link group relative flex items-center justify-center p-1.5" aria-label="Jump to Metrics">
+      <span class="hud-dot-indicator w-2.5 h-2.5 rounded-full bg-iceblue-400/50 transition-all duration-300"></span>
+      <span class="hud-dot-label absolute right-7 px-2.5 py-1 rounded-lg bg-iceblue-100 border border-oceanbrand-400/40 text-white text-[10px] font-bold tracking-wider opacity-0 -translate-x-2 transition-all duration-200 pointer-events-none whitespace-nowrap shadow-lg">08 // IMPACT</span>
+    </a>
+
+    <a href="#contact" data-nav-tab="contact" data-target="contact" class="hud-dot-link group relative flex items-center justify-center p-1.5" aria-label="Jump to Quote Terminal">
+      <span class="hud-dot-indicator w-2.5 h-2.5 rounded-full bg-iceblue-400/50 transition-all duration-300"></span>
+      <span class="hud-dot-label absolute right-7 px-2.5 py-1 rounded-lg bg-iceblue-100 border border-oceanbrand-400/40 text-white text-[10px] font-bold tracking-wider opacity-0 -translate-x-2 transition-all duration-200 pointer-events-none whitespace-nowrap shadow-lg">09 // INITIATE</span>
+    </a>
+
+    <div class="w-4 h-[1px] bg-iceblue-300/60 my-1"></div>
+    <div id="scroll-pct-text" class="text-[9px] font-mono font-bold text-oceanbrand-400">0%</div>
+  </aside>
+
+  <!-- Floating Scroll To Top Pill -->
+  <div class="fixed bottom-6 left-6 z-40 flex items-center">
+    <button id="scroll-to-top-btn" class="liquid-glass-pill liquid-pop-glow w-11 h-11 rounded-2xl flex items-center justify-center shadow-xl border border-oceanbrand-400/40 text-iceblue-900 hover:text-oceanbrand-400 opacity-0 pointer-events-none translate-y-4 transition-all duration-300" aria-label="Scroll to top">
+      <i class="fa-solid fa-arrow-up text-xs"></i>
+    </button>
+  </div>
+
+  <!-- Floating WhatsApp Pill -->
+  <div class="fixed bottom-6 right-6 z-40">
+    <a href="https://wa.me/918260860014?text=Hello%20Visionity%2C%20I%20want%20to%20discuss%20a%20new%20project." target="_blank" rel="noopener noreferrer" class="liquid-glow-btn flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-3.5 rounded-full shadow-2xl transition-all font-bold" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp text-lg"></i>
+      <span class="text-xs hidden sm:inline">Direct Chat</span>
+    </a>
+  </div>
+
+  <!-- Top Announcement Bar -->
+  <header class="relative z-30 pt-4 px-4 text-center">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-2 px-5 py-2 rounded-2xl liquid-glass-slab text-xs font-bold text-iceblue-800">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-oceanbrand-400 animate-pulse shadow-[0_0_8px_#00d2ff]"></span>
+        <span class="text-iceblue-900 font-extrabold tracking-wide">VISIONITY</span>
+        <span class="text-iceblue-400 hidden sm:inline">•</span>
+        <span class="hidden sm:inline">Tangi, Cuttack • Odisha, India</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px]">
+        <a href="tel:8260860014" class="liquid-pop-glow px-2.5 py-1 rounded-lg hover:text-oceanbrand-400 font-bold flex items-center gap-1.5 transition-colors">
+          <i class="fa-solid fa-phone text-oceanbrand-400"></i> +91 8260860014
+        </a>
+        <a href="mailto:sahoosuchismita810@gmail.com" class="liquid-pop-glow px-2.5 py-1 rounded-lg hover:text-oceanbrand-400 font-bold hidden md:flex items-center gap-1.5 transition-colors">
+          <i class="fa-solid fa-envelope text-oceanbrand-400"></i> sahoosuchismita810@gmail.com
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Glass Navigation Island -->
+  <header class="sticky top-3 z-40 px-4 sm:px-6 lg:px-8 mt-2 transition-all duration-300" id="main-navbar">
+    <nav class="max-w-6xl mx-auto h-20 rounded-[2.5rem] liquid-glass-slab px-6 flex items-center justify-between shadow-2xl backdrop-blur-2xl">
+      
+      <!-- Brand & Official Logo -->
+      <a href="#home" data-nav-tab="home" class="flex items-center gap-3.5 liquid-pop-glow px-2 py-1 rounded-2xl">
+        <div class="w-14 h-14 rounded-2xl liquid-prism-rim p-1 flex items-center justify-center shadow-md bg-white">
+          <img src="logo.jpeg" alt="Visionity Logo" class="w-full h-full object-contain rounded-xl">
+        </div>
+        <div class="flex flex-col">
+          <span class="font-brand font-extrabold text-xl tracking-wider text-iceblue-900 uppercase">
+            VISIONITY
+          </span>
+          <span class="text-[9px] tracking-widest text-oceanbrand-400 font-bold uppercase hidden sm:block">
+            Beyond Limits. Into Possibilities.
+          </span>
+        </div>
+      </a>
+
+      <!-- Primary Desktop Links with Animated Switch Handlers -->
+      <div class="hidden lg:flex items-center space-x-2 font-bold text-sm text-iceblue-800">
+        <a href="#home" data-nav-tab="home" aria-current="page" class="nav-tab-trigger liquid-pop-glow px-4 py-2 rounded-xl hover:bg-oceanbrand-500/20 hover:text-oceanbrand-300 transition-all">Home</a>
+        <a href="#services" data-nav-tab="services" class="nav-tab-trigger liquid-pop-glow px-4 py-2 rounded-xl hover:bg-oceanbrand-500/20 hover:text-oceanbrand-300 transition-all">Services</a>
+        <a href="#process" data-nav-tab="process" class="nav-tab-trigger liquid-pop-glow px-4 py-2 rounded-xl hover:bg-oceanbrand-500/20 hover:text-oceanbrand-300 transition-all">Process</a>
+        <a href="#team" data-nav-tab="team" class="nav-tab-trigger liquid-pop-glow px-4 py-2 rounded-xl hover:bg-oceanbrand-500/20 hover:text-oceanbrand-300 transition-all">Team</a>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="tel:8260860014" class="liquid-glow-btn hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-xs text-white bg-emerald-600 hover:bg-emerald-500 shadow-xl transition-all">
+          <i class="fa-solid fa-phone text-[10px]"></i>
+          <span>Contact</span>
+        </a>
+        <a href="#contact" data-nav-tab="contact" class="liquid-glow-btn cyan-pill-cta hidden sm:inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-bold text-xs text-iceblue-50 shadow-xl transition-all">
+          <span>Get a Quote</span>
+          <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </a>
+
+        <!-- Mobile Drawer Hamburger -->
+        <button id="menu-popup-trigger" aria-label="Open Navigation Drawer" class="liquid-pop-glow w-11 h-11 rounded-2xl liquid-glass-pill flex items-center justify-center text-iceblue-900 hover:text-oceanbrand-400 transition-all">
+          <i class="fa-solid fa-bars-staggered text-base"></i>
+        </button>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Modal -->
+  <div id="ios-menu-overlay" class="fixed inset-0 z-50 bg-iceblue-50/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-300">
+    <div id="ios-menu-modal" class="fixed right-0 top-0 bottom-0 w-full max-w-sm bg-iceblue-100/95 border-l border-oceanbrand-400/30 backdrop-blur-2xl p-6 shadow-2xl flex flex-col justify-between overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-iceblue-200">
+          <div class="flex items-center gap-3">
+            <img src="logo.jpeg" alt="Visionity Logo" class="w-12 h-12 object-contain rounded-xl bg-white p-1">
+            <span class="font-brand font-bold text-lg text-iceblue-900">VISIONITY</span>
+          </div>
+          <button id="menu-popup-close" class="w-10 h-10 rounded-xl bg-iceblue-200 flex items-center justify-center text-iceblue-900 font-bold hover:bg-iceblue-300">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <nav class="py-6 space-y-2">
+          <a href="#home" data-nav-tab="home" aria-current="page" class="ios-nav-link nav-tab-trigger liquid-pop-glow block px-4 py-3 rounded-2xl hover:bg-iceblue-200 font-bold text-sm text-iceblue-900">Home Overview</a>
+          <a href="#services" data-nav-tab="services" class="ios-nav-link nav-tab-trigger liquid-pop-glow block px-4 py-3 rounded-2xl hover:bg-iceblue-200 font-bold text-sm text-iceblue-900">Core Services</a>
+          <a href="#process" data-nav-tab="process" class="ios-nav-link nav-tab-trigger liquid-pop-glow block px-4 py-3 rounded-2xl hover:bg-iceblue-200 font-bold text-sm text-iceblue-900">5-Phase Pipeline</a>
+          <a href="#team" data-nav-tab="team" class="ios-nav-link nav-tab-trigger liquid-pop-glow block px-4 py-3 rounded-2xl hover:bg-iceblue-200 font-bold text-sm text-iceblue-900">Leadership & Team</a>
+          <a href="#contact" data-nav-tab="contact" class="ios-nav-link nav-tab-trigger liquid-pop-glow block px-4 py-3 rounded-2xl hover:bg-iceblue-200 font-bold text-sm text-iceblue-900">Request Quotation</a>
+        </nav>
+      </div>
+
+      <div class="pt-6 border-t border-iceblue-200 space-y-3">
+        <a href="tel:8260860014" class="liquid-pop-glow w-full py-3 rounded-2xl liquid-glass-pill text-center font-bold text-xs text-iceblue-900 flex items-center justify-center gap-2">
+          <i class="fa-solid fa-phone text-oceanbrand-400"></i> Direct: 8260860014
+        </a>
+        <a href="https://wa.me/918260860014" target="_blank" rel="noopener noreferrer" class="liquid-glow-btn w-full py-3 rounded-2xl bg-emerald-600 text-white text-center font-bold text-xs flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp Consultation
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main class="relative z-10">
+
+    <!-- HERO SECTION (HOME TAB) -->
+    <section id="home" data-tab-panel="home" class="page-tab-panel active relative min-h-[92vh] md:min-h-screen flex items-center justify-center overflow-hidden">
+      
+      <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <video
+          id="hero-bg-video"
+          autoplay
+          loop
+          muted
+          playsinline
+          preload="auto"
+          class="w-full h-full object-cover scale-105 opacity-75 mix-blend-normal"
+        >
+          <source src="logo animation1.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#020917]/50 via-[#04122c]/40 to-[#020917]/70 backdrop-blur-[1px]"></div>
+      </div>
+
+      <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+        
+        <div class="liquid-pop-glow inline-flex items-center gap-2 px-5 py-2 rounded-full liquid-glass-pill text-xs font-bold text-oceanbrand-300 mb-6 shadow-md cursor-default">
+          <span class="w-2.5 h-2.5 rounded-full bg-oceanbrand-400 animate-pulse shadow-[0_0_10px_#00d2ff]"></span>
+          <span class="tracking-wider uppercase">Ideas • Technology • Impact</span>
+        </div>
+
+        <h1 class="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl text-white tracking-tight leading-[1.12] drop-shadow-2xl mb-6">
+          Websites & Software Engineered with <span class="cyan-gradient-text">Pure Clarity.</span>
+        </h1>
+
+        <p class="text-iceblue-800 text-base sm:text-xl max-w-3xl mx-auto leading-relaxed drop-shadow mb-10 font-semibold">
+          Empowering enterprises, institutions, and startups with bespoke corporate web portals, high-conversion e-commerce engines, and resilient ERP billing systems.
+        </p>
+
+        <!-- Search Bar -->
+        <div class="max-w-2xl mx-auto mb-10">
+          <div class="liquid-pop-glow relative flex items-center p-2 rounded-full liquid-prism-rim shadow-2xl">
+            <i class="fa-solid fa-magnifying-glass text-oceanbrand-400 ml-4 mr-3 text-base"></i>
+            <input 
+              id="hero-search-input"
+              type="text" 
+              placeholder="What digital solution do you want to build? (e.g., ERP, Store, Portal)" 
+              class="w-full bg-transparent text-sm text-white placeholder-iceblue-400 font-bold focus:outline-none"
+            >
+            <button id="hero-search-btn" class="liquid-glow-btn cyan-pill-cta shrink-0 px-6 py-3 rounded-full text-iceblue-50 font-bold text-xs shadow-md transition-all">
+              Explore
+            </button>
+          </div>
+        </div>
+
+        <!-- Call to Action Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <button data-nav-tab="contact" class="liquid-glow-btn cyan-pill-cta px-8 py-4 rounded-full font-bold text-sm text-iceblue-50 shadow-2xl transition-all flex items-center gap-2">
+            <span>Get a Project Quote</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+          <button data-nav-tab="team" class="liquid-pop-glow px-7 py-4 rounded-full font-bold text-sm text-white liquid-glass-pill hover:border-oceanbrand-400 transition-all shadow-lg flex items-center gap-2">
+            <i class="fa-solid fa-users text-oceanbrand-400"></i>
+            <span>Meet Our Team</span>
+          </button>
+          <a href="https://wa.me/918260860014?text=Hi%20Visionity%2C%20I%20am%20interested%20in%20building%20a%20website" target="_blank" rel="noopener noreferrer" class="liquid-glow-btn px-6 py-4 rounded-full font-bold text-sm text-white bg-emerald-600 hover:bg-emerald-500 transition-all shadow-lg flex items-center gap-2">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>WhatsApp Us</span>
+          </a>
+        </div>
+
+        <!-- Metrics Pills -->
+        <div class="pt-12 grid grid-cols-3 gap-4 max-w-lg mx-auto">
+          <div class="liquid-pop-glow p-4 rounded-2xl liquid-glass-slab text-center">
+            <div class="font-display font-black text-2xl text-white">99.9%</div>
+            <div class="text-[10px] text-oceanbrand-300 font-extrabold uppercase tracking-wider mt-0.5">Uptime SLA</div>
+          </div>
+          <div class="liquid-pop-glow p-4 rounded-2xl liquid-glass-slab text-center">
+            <div class="font-display font-black text-2xl text-oceanbrand-400">Sub-1s</div>
+            <div class="text-[10px] text-oceanbrand-300 font-extrabold uppercase tracking-wider mt-0.5">Core Vitals</div>
+          </div>
+          <div class="liquid-pop-glow p-4 rounded-2xl liquid-glass-slab text-center">
+            <div class="font-display font-black text-2xl text-white">100%</div>
+            <div class="text-[10px] text-oceanbrand-300 font-extrabold uppercase tracking-wider mt-0.5">Clean Code</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- REFINED SEAMLESS INFINITE TECH MARQUEE -->
+    <div class="relative py-6 overflow-hidden z-20 marquee-mask border-y border-oceanbrand-400/25 bg-[#031026]/80 backdrop-blur-md">
+      <div class="marquee-container">
+        <div class="marquee-track flex items-center gap-5">
+          
+          <!-- Track Items - Master Group A -->
+          <div class="flex items-center gap-5 shrink-0">
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">Node.js</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-oceanbrand-400 shadow-[0_0_8px_#00d2ff]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">Next.js & SSR</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_8px_#fbbf24]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">HTML5 & CSS3</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-purple-400 shadow-[0_0_8px_#c084fc]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">Figma UI/UX</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-sky-400 shadow-[0_0_8px_#38bdf8]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">PostgreSQL & SQL</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-oceanbrand-300 shadow-[0_0_8px_#38ef7d]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">Cyber Glassmorphism</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-indigo-400 shadow-[0_0_8px_#818cf8]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">REST & GraphQL</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-rose-400 shadow-[0_0_8px_#fb7185]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">Security Audits</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-teal-400 shadow-[0_0_8px_#2dd4bf]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">WebSockets Real-Time</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">GST Billing Core</span>
+            </div>
+          </div>
+
+          <!-- Track Items - Group B (Identical Repeat) -->
+          <div class="flex items-center gap-5 shrink-0" aria-hidden="true">
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">Node.js</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-oceanbrand-400 shadow-[0_0_8px_#00d2ff]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">Next.js & SSR</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_8px_#fbbf24]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">HTML5 & CSS3</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-purple-400 shadow-[0_0_8px_#c084fc]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">Figma UI/UX</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-sky-400 shadow-[0_0_8px_#38bdf8]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">PostgreSQL & SQL</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-oceanbrand-300 shadow-[0_0_8px_#38ef7d]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">Cyber Glassmorphism</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-indigo-400 shadow-[0_0_8px_#818cf8]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">REST & GraphQL</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-rose-400 shadow-[0_0_8px_#fb7185]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">Security Audits</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-teal-400 shadow-[0_0_8px_#2dd4bf]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">WebSockets Real-Time</span>
+            </div>
+            <div class="liquid-cylinder-pill liquid-pop-glow px-6 py-2.5 rounded-full flex items-center gap-2.5 cursor-default">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399]"></span>
+              <span class="font-mono font-bold text-xs text-iceblue-900 tracking-wide">GST Billing Core</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES (SERVICES TAB) -->
+    <section id="services" data-tab-panel="services" class="page-tab-panel py-24 relative overflow-hidden">
+      
+      <!-- Smaller Orbital Earth Graphic positioned precisely in the top right corner -->
+      <div class="absolute top-4 right-4 sm:top-6 sm:right-6 w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 pointer-events-none z-0 opacity-90 select-none">
+        <img src="Earth with Neon Orbital Rings.png" alt="Orbital Earth Graphic" class="w-full h-full object-contain animate-pulse duration-[5000ms] drop-shadow-[0_0_25px_rgba(0,210,255,0.45)]">
+      </div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <div class="liquid-pop-glow inline-flex items-center gap-2 px-4 py-1.5 rounded-full liquid-glass-pill text-oceanbrand-300 text-xs font-bold mb-3 shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-oceanbrand-400 shadow-[0_0_8px_#00d2ff]"></span>
+              <span class="uppercase tracking-wider">Our Services</span>
+            </div>
+            <h2 class="font-display font-black text-3xl sm:text-5xl text-iceblue-900 tracking-tight">
+              Digital Solutions Designed for <span class="cyan-gradient-text">What's Next.</span>
+            </h2>
+            <p class="text-iceblue-800 text-base max-w-xl mt-2 font-semibold">
+              Transparent, requirement-based engineering. Explore our core service tiers stacked with full technical specs.
+            </p>
+          </div>
+          <button data-nav-tab="contact" class="liquid-glow-btn cyan-pill-cta px-6 py-3 rounded-full text-iceblue-50 font-bold text-xs inline-flex items-center gap-2 shadow-xl transition-all">
+            <span>Request Custom Proposal</span>
+            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </button>
+        </div>
+
+        <!-- Sticky Stacking Cards -->
+        <div class="space-y-12">
+          
+          <!-- Card 01: Corporate Websites -->
+          <div class="service-sticky-card liquid-pop-glow rounded-[2.8rem] p-8 sm:p-12 liquid-prism-rim shadow-2xl transition-all" style="z-index: 10;">
+            <div class="flex flex-col lg:flex-row gap-8 items-center justify-between">
+              <div class="space-y-4 flex-1">
+                <div class="flex items-center gap-3">
+                  <div class="w-14 h-14 rounded-2xl cyan-icon-orb flex items-center justify-center text-2xl shadow-sm icon-pop-badge">
+                    <i class="fa-solid fa-desktop"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs font-mono font-bold text-oceanbrand-400 tracking-wider">TIER 01 // WEB PORTALS</span>
+                    <h3 class="font-display font-black text-2xl sm:text-3xl text-iceblue-900">Corporate Websites & Brand Platforms</h3>
+                  </div>
+                </div>
+                <p class="text-iceblue-800 text-sm leading-relaxed font-semibold">
+                  Engineered for startups, institutions, and corporate firms needing high credibility and lightning-fast loading speeds across mobile and desktop.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 font-bold">
+                  <div class="feature-item-pop flex items-center gap-2.5 text-xs text-iceblue-900 p-2 rounded-xl">
+                    <i class="fa-solid fa-check text-oceanbrand-400"></i> Next.js SSR & Static Generation
+                  </div>
+                  <div class="feature-item-pop flex items-center gap-2.5 text-xs text-iceblue-900 p-2 rounded-xl">
+                    <i class="fa-solid fa-check text-oceanbrand-400"></i> Core Web Vitals 95+ Guarantee
+                  </div>
+                  <div class="feature-item-pop flex items-center gap-2.5 text-xs text-iceblue-900 p-2 rounded-xl">
+                    <i class="fa-solid fa-check text-oceanbrand-400"></i> Lead Capture & Analytics Hookup
+                  </div>
+                  <div class="feature-item-pop flex items-center gap-2.5 text-xs text-iceblue-900 p-2 rounded-xl">
+                    <i class="fa-solid fa-check text-oceanbrand-400"></i> Full Mobile Responsive Ergonomics
+                  </div>
+                </div>
+              </div>
+
+              <!-- Corporate Website Showcase -->
+              <div class="w-full lg:w-72 shrink-0">
+                <div class="service-image-frame rounded-2xl overflow-hidden border-2 border-oceanbrand-400/40 shadow-lg bg-iceblue-100 aspect-[16/10]">
+                  <img src="corporate website.jpg" alt="Corporate Websites & Brand Platforms" class="w-full h-full object-cover">
+                </div>
+              </div>
+
+              <div class="shrink-0 w-full lg:w-64 p-6 rounded-2xl liquid-glass-slab flex flex-col justify-between">
+                <div>
+                  <span class="text-[10px] font-mono uppercase text-oceanbrand-300 font-bold">Standard Delivery</span>
+                  <div class="text-xl font-black text-iceblue-900 mt-1">2 to 3 Weeks</div>
+                  <p class="text-[11px] text-iceblue-800 mt-1 font-semibold">Full staging environment with weekly demos.</p>
+                </div>
+                <button data-nav-tab="contact" class="liquid-glow-btn cyan-pill-cta mt-6 w-full py-3 rounded-xl text-iceblue-50 font-bold text-xs flex items-center justify-center gap-2 shadow-md">
+                  <span>Configure This Service</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 02: High-Yield E-Commerce -->
+          <div class="service-sticky-card liquid-pop-glow rounded-[2.8rem] p-8 sm:p-12 liquid-prism-rim shadow-2xl transition-all" style="z-index: 20;">
+            <div class="flex flex-col lg:flex-row gap-8 items-center justify-between">
+              <div class="space-y-4 flex-1">
+                <div class="flex items-center gap-3">
+                  <div class="w-14 h-14 rounded-2xl cyan-icon-orb flex items-center justify-center text-2xl shadow-sm icon-pop-badge">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs font-mono font-bold text-oceanbrand-300 tracking-wider">TIER 02 // COMMERCE</span>
+                    <h3 class="font-display font-black text-2xl sm:text-3xl text-iceblue-900">High-Yield E-Commerce Platforms</h3>
+                  </div>
+                </div>
+                <p class="text-iceblue-800 text-sm leading-relaxed font-semibold">
+                  Eliminate cart drop-offs with custom shopping funnels, instant QR/UPI and credit card gateway checkouts, automated customer shipping alerts, and synchronized inventory.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 font-bold">
+                  <div class="feature-item-pop flex items-center gap-2.5 text-xs text-iceblue-900 p-2 rounded-xl">
+                    <i class="fa-solid fa-check text-oceanbrand-400"></i> Seamless UPI, Cards & NetBanking
+                  </div>
+                  <div class="feature-item-pop flex items-center gap-2.5 text-xs text-iceblue-900 p-2 rounded-xl">
+                    <i class="fa-solid fa-check text-oceanbrand-400"></i> Automated Invoice & WhatsApp Order Alerts
+                  </div>
+                  <div class="feature-item-pop flex items-center gap-2.5 text-xs text-iceblue-900 p-2 rounded-xl">
+                    <i class="fa-solid fa-check text-oceanbrand-400"></i> Multi-Warehouse Inventory Ledgers
+                  </div>
+                  <div class="feature-item-pop flex items-center gap-2.5 text-xs text-iceblue-900 p-2 rounded-xl">
+                    <i class="fa-solid fa-check text-oceanbrand-400"></i> Lightning-Fast Catalog Search
+                  </div>
+                </div>
+              </div>
+
+              <!-- E-Commerce Showcase -->
+              <div class="w-full lg:w-72 shrink-0">
+                <div class="service-image-frame rounded-2xl overflow-hidden border-2 border-oceanbrand-400/40 shadow-lg bg-iceblue-100 aspect-[16/10]">
+                  <img src="ecommerce.jpg" alt="High-Yield E-Commerce Platforms" class="w-full h-full object-cover">
+                </div>
+              </div>
+
+              <div class="shrink-0 w-full lg:w-64 p-6 rounded-2xl liquid-glass-slab flex flex-col justify-between">
+                <div>
+                  <span class="text-[10px] font-mono uppercase text-oceanbrand-300 font-bold">Standard Delivery</span>
+                  <div class="text-xl font-black text-iceblue-900 mt-1">3 to 4 Weeks</div>
+                  <p class="text-[11px] text-iceblue-800 mt-1 font-semibold">Payment gateway credentials sandbox included.</p>
+                </div>
+                <button data-nav-tab="contact" class="liquid-glow-btn cyan-pill-cta mt-6 w-full py-3 rounded-xl text-iceblue-50 font-bold text-xs flex items-center justify-center gap-2 shadow-md">
+                  <span>Configure This Service</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 03: Custom ERP & GST Billing -->
+          <div class="service-sticky-card liquid-pop-glow rounded-[2.8rem] p-8 sm:p-12 liquid-prism-rim shadow-2xl transition-all" style="z-index: 30;">
+            <div class="flex flex-col lg:flex-row gap-8 items-center justify-between">
+              <div class="space-y-4 flex-1">
+                <div class="flex items-center gap-3">
+                  <div class="w-14 h-14 rounded-2xl cyan-icon-orb flex items-center justify-center text-2xl shadow-sm icon-pop-badge">
+                    <i class="fa-solid fa-file-invoice"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs font-mono font-bold text-oceanbrand-400 tracking-wider">TIER 03 // ENTERPRISE ERP</span>
+                    <h3 class="font-display font-black text-2xl sm:text-3xl text-iceblue-900">Custom ERP & GST Billing Automation</h3>
+                  </div>
+                </div>
+                <p class="text-iceblue-800 text-sm leading-relaxed font-semibold">
+                  Replaces chaotic spreadsheets with a centralized business operating system: automatic GST tax calculations, thermal print receipts, role permissions, and financial audit trails.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 font-bold">
+                  <div class="feature-item-pop flex items-center gap-2.5 text-xs text-iceblue-900 p-2 rounded-xl">
+                    <i class="fa-solid fa-check text-oceanbrand-400"></i> GST-Compliant Invoices & Thermal Print
+                  </div>
+                  <div class="feature-item-pop flex items-center gap-2.5 text-xs text-iceblue-900 p-2 rounded-xl">
+                    <i class="fa-solid fa-check text-oceanbrand-400"></i> Multi-Role Granular Access Control
+                  </div>
+                  <div class="feature-item-pop flex items-center gap-2.5 text-xs text-iceblue-900 p-2 rounded-xl">
+                    <i class="fa-solid fa-check text-oceanbrand-400"></i> Daily Sales & Margin Reports (PDF/Excel)
+                  </div>
+                  <div class="feature-item-pop flex items-center gap-2.5 text-xs text-iceblue-900 p-2 rounded-xl">
+                    <i class="fa-solid fa-check text-oceanbrand-400"></i> Automated Encrypted Cloud Backups
+                  </div>
+                </div>
+              </div>
+
+              <!-- ERP Showcase -->
+              <div class="w-full lg:w-72 shrink-0">
+                <div class="service-image-frame rounded-2xl overflow-hidden border-2 border-oceanbrand-400/40 shadow-lg bg-white/95 p-2 aspect-[16/10] flex items-center justify-center">
+                  <img src="multiple-invoice-templates.webp" alt="Custom ERP & GST Billing Automation" class="w-full h-full object-contain">
+                </div>
+              </div>
+
+              <div class="shrink-0 w-full lg:w-64 p-6 rounded-2xl liquid-glass-slab flex flex-col justify-between">
+                <div>
+                  <span class="text-[10px] font-mono uppercase text-oceanbrand-300 font-bold">Standard Delivery</span>
+                  <div class="text-xl font-black text-iceblue-900 mt-1">4 to 6 Weeks</div>
+                  <p class="text-[11px] text-iceblue-800 mt-1 font-semibold">On-site training and admin portal walkthrough.</p>
+                </div>
+                <button data-nav-tab="contact" class="liquid-glow-btn cyan-pill-cta mt-6 w-full py-3 rounded-xl text-iceblue-50 font-bold text-xs flex items-center justify-center gap-2 shadow-md">
+                  <span>Configure This Service</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROCESS FRAMEWORK (PROCESS TAB) -->
+    <section id="process" data-tab-panel="process" class="page-tab-panel py-24 border-t border-iceblue-200 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <div class="liquid-pop-glow inline-flex items-center gap-2 px-4 py-1.5 rounded-full liquid-glass-pill text-oceanbrand-300 text-xs font-bold mb-3 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-oceanbrand-400 shadow-[0_0_8px_#00d2ff]"></span>
+            <span class="uppercase tracking-wider">Our Approach</span>
+          </div>
+          <h2 class="font-display font-black text-3xl sm:text-5xl text-iceblue-900 tracking-tight">
+            From First Idea to <span class="cyan-gradient-text">Final Launch.</span>
+          </h2>
+          <p class="text-iceblue-800 text-base mt-2 font-semibold">
+            Structured sprint phases ensuring transparency, code reviews, and zero handover delays.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+          <div class="liquid-pop-glow p-6 sm:p-8 rounded-[2.5rem] liquid-prism-rim shadow-lg flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-full cyan-icon-orb font-mono font-black text-lg flex items-center justify-center mb-6 icon-pop-badge">
+                01
+              </div>
+              <h4 class="font-display font-black text-xl text-iceblue-900 mb-2">Requirement Scope</h4>
+              <p class="text-xs text-iceblue-800 leading-relaxed font-semibold">
+                We audit your audience, technical goals, database entities, and performance metrics to draft an itemized engineering blueprint.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-iceblue-200 text-[11px] font-mono text-oceanbrand-400 font-bold">
+              Deliverable: Architecture Specs
+            </div>
+          </div>
+
+          <div class="liquid-pop-glow p-6 sm:p-8 rounded-[2.5rem] liquid-prism-rim shadow-lg flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-full cyan-icon-orb font-mono font-black text-lg flex items-center justify-center mb-6 icon-pop-badge">
+                02
+              </div>
+              <h4 class="font-display font-black text-xl text-iceblue-900 mb-2">Prototype & UI/UX</h4>
+              <p class="text-xs text-iceblue-800 leading-relaxed font-semibold">
+                Interactive Figma prototypes, design tokens, optical glass components, and client approval prior to writing production code.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-iceblue-200 text-[11px] font-mono text-oceanbrand-400 font-bold">
+              Deliverable: High-Fidelity Prototype
+            </div>
+          </div>
+
+          <div class="liquid-pop-glow p-6 sm:p-8 rounded-[2.5rem] liquid-prism-rim shadow-lg flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-full cyan-icon-orb font-mono font-black text-lg flex items-center justify-center mb-6 icon-pop-badge">
+                03
+              </div>
+              <h4 class="font-display font-black text-xl text-iceblue-900 mb-2">Agile Sprint Build</h4>
+              <p class="text-xs text-iceblue-800 leading-relaxed font-semibold">
+                Clean Next.js / SQL engineering with weekly staging deployments. You test live functionality on real devices during every sprint.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-iceblue-200 text-[11px] font-mono text-oceanbrand-400 font-bold">
+              Deliverable: Live Staging Link
+            </div>
+          </div>
+
+          <div class="liquid-pop-glow p-6 sm:p-8 rounded-[2.5rem] liquid-prism-rim shadow-lg flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-full cyan-icon-orb font-mono font-black text-lg flex items-center justify-center mb-6 icon-pop-badge">
+                04
+              </div>
+              <h4 class="font-display font-black text-xl text-iceblue-900 mb-2">Audit & Handover</h4>
+              <p class="text-xs text-iceblue-800 leading-relaxed font-semibold">
+                Vercel/Cloudflare CDN launch, custom domain mapping, bot protection shields, training walkthrough, and ongoing SLA maintenance.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-iceblue-200 text-[11px] font-mono text-oceanbrand-400 font-bold">
+              Deliverable: Production Deployment
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LEADERSHIP & TEAM (TEAM TAB) -->
+    <section id="team" data-tab-panel="team" class="page-tab-panel py-24 border-t border-iceblue-200 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <div class="liquid-pop-glow inline-flex items-center gap-2 px-4 py-1.5 rounded-full liquid-glass-pill text-oceanbrand-300 text-xs font-bold mb-3 shadow-sm">
+            <i class="fa-solid fa-users-gear text-oceanbrand-400"></i>
+            <span class="uppercase tracking-wider">People Behind Visionity</span>
+          </div>
+          <h2 class="font-display font-black text-3xl sm:text-5xl text-iceblue-900 tracking-tight">
+            Our Leadership & <span class="cyan-gradient-text">Engineering Team.</span>
+          </h2>
+          <p class="text-iceblue-800 text-base mt-2 font-semibold">
+            The visionary leaders, frontend developers, backend architects, UI/UX designers, and strategists bringing concepts to life.
+          </p>
+        </div>
+
+        <!-- Executive Grid -->
+        <div class="mb-16">
+          <div class="flex items-center gap-3 mb-8">
+            <span class="w-3.5 h-3.5 rounded-full bg-oceanbrand-400 shadow-[0_0_10px_#00d2ff]"></span>
+            <h3 class="font-display font-extrabold text-xl text-iceblue-900 tracking-wide uppercase text-sm">
+              Executive Leadership
+            </h3>
+            <div class="h-[1px] flex-1 bg-iceblue-200"></div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="liquid-pop-glow rounded-[2.4rem] p-6 liquid-prism-rim shadow-md group">
+              <div class="flex items-start justify-between mb-4">
+                <div class="w-12 h-12 rounded-2xl cyan-icon-orb flex items-center justify-center font-bold text-xl icon-pop-badge">
+                  <i class="fa-solid fa-crown text-base"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-oceanbrand-500 text-iceblue-50 font-mono font-black text-xs tracking-wider">CEO</span>
+              </div>
+              <h4 class="font-display font-black text-xl text-iceblue-900 group-hover:text-oceanbrand-400 transition-colors">Darakshan Akhtar</h4>
+              <p class="text-xs text-iceblue-800 mt-1 font-semibold">Chief Executive Officer • Strategic Direction & Enterprise Growth</p>
+            </div>
+
+            <div class="liquid-pop-glow rounded-[2.4rem] p-6 liquid-prism-rim shadow-md group">
+              <div class="flex items-start justify-between mb-4">
+                <div class="w-12 h-12 rounded-2xl cyan-icon-orb flex items-center justify-center font-bold text-xl icon-pop-badge">
+                  <i class="fa-solid fa-chart-line text-base"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-oceanbrand-500 text-iceblue-50 font-mono font-black text-xs tracking-wider">CMO</span>
+              </div>
+              <h4 class="font-display font-black text-xl text-iceblue-900 group-hover:text-oceanbrand-400 transition-colors">Pritiprava Mohapatra</h4>
+              <p class="text-xs text-iceblue-800 mt-1 font-semibold">Chief Marketing Officer • Brand Reach & Client Communications</p>
+            </div>
+
+            <div class="liquid-pop-glow rounded-[2.4rem] p-6 liquid-prism-rim shadow-md group">
+              <div class="flex items-start justify-between mb-4">
+                <div class="w-12 h-12 rounded-2xl cyan-icon-orb flex items-center justify-center font-bold text-xl icon-pop-badge">
+                  <i class="fa-solid fa-compass-drafting text-base"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-oceanbrand-500 text-iceblue-50 font-mono font-black text-xs tracking-wider">CDO</span>
+              </div>
+              <h4 class="font-display font-black text-xl text-iceblue-900 group-hover:text-oceanbrand-400 transition-colors">Shrabani Sukla</h4>
+              <p class="text-xs text-iceblue-800 mt-1 font-semibold">Chief Design Officer • Creative Vision & Aesthetics</p>
+            </div>
+
+            <div class="liquid-pop-glow rounded-[2.4rem] p-6 liquid-prism-rim shadow-md group">
+              <div class="flex items-start justify-between mb-4">
+                <div class="w-12 h-12 rounded-2xl cyan-icon-orb flex items-center justify-center font-bold text-xl icon-pop-badge">
+                  <i class="fa-solid fa-gears text-base"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-oceanbrand-500 text-iceblue-50 font-mono font-black text-xs tracking-wider">COO</span>
+              </div>
+              <h4 class="font-display font-black text-xl text-iceblue-900 group-hover:text-oceanbrand-400 transition-colors">Shubhalaxmi Sahoo</h4>
+              <p class="text-xs text-iceblue-800 mt-1 font-semibold">Chief Operating Officer • Operational Workflow & Project Delivery</p>
+            </div>
+
+            <div class="liquid-pop-glow rounded-[2.4rem] p-6 liquid-prism-rim shadow-md group">
+              <div class="flex items-start justify-between mb-4">
+                <div class="w-12 h-12 rounded-2xl cyan-icon-orb flex items-center justify-center font-bold text-xl icon-pop-badge">
+                  <i class="fa-solid fa-coins text-base"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-oceanbrand-500 text-iceblue-50 font-mono font-black text-xs tracking-wider">CFO</span>
+              </div>
+              <h4 class="font-display font-black text-xl text-iceblue-900 group-hover:text-oceanbrand-400 transition-colors">Biswajit Sahoo</h4>
+              <p class="text-xs text-iceblue-800 mt-1 font-semibold">Chief Financial Officer • Finance & Resource Allocation</p>
+            </div>
+
+            <div class="liquid-pop-glow rounded-[2.4rem] p-6 liquid-prism-rim shadow-md group">
+              <div class="flex items-start justify-between mb-4">
+                <div class="w-12 h-12 rounded-2xl cyan-icon-orb flex items-center justify-center font-bold text-xl icon-pop-badge">
+                  <i class="fa-solid fa-microchip text-base"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-oceanbrand-500 text-iceblue-50 font-mono font-black text-xs tracking-wider">CTO</span>
+              </div>
+              <h4 class="font-display font-black text-xl text-iceblue-900 group-hover:text-oceanbrand-400 transition-colors">RP Gourab Kumar</h4>
+              <p class="text-xs text-iceblue-800 mt-1 font-semibold">Chief Technology Officer • Engineering Architecture & Security</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Functional Squads -->
+        <div>
+          <div class="flex items-center gap-3 mb-8">
+            <span class="w-3.5 h-3.5 rounded-full bg-oceanbrand-300 shadow-[0_0_10px_#38ef7d]"></span>
+            <h3 class="font-display font-extrabold text-xl text-iceblue-900 tracking-wide uppercase text-sm">
+              Functional Teams & Specialists
+            </h3>
+            <div class="h-[1px] flex-1 bg-iceblue-200"></div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="liquid-pop-glow p-6 rounded-[2.4rem] liquid-prism-rim flex flex-col justify-between shadow-md">
+              <div>
+                <div class="w-10 h-10 rounded-xl cyan-icon-orb flex items-center justify-center mb-4 text-base icon-pop-badge">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h4 class="font-display font-black text-base text-iceblue-900">Frontend & Database</h4>
+                <p class="text-[11px] text-oceanbrand-400 font-bold mb-3">UI Interfaces & Data Architecture</p>
+                <ul class="space-y-2 text-xs text-iceblue-800 font-bold">
+                  <li class="feature-item-pop flex items-center gap-2 p-1.5 rounded-lg"><i class="fa-solid fa-circle-check text-oceanbrand-400 text-[10px]"></i> <span class="font-black text-iceblue-900">Amit Kumar Sahoo</span></li>
+                  <li class="feature-item-pop flex items-center gap-2 p-1.5 rounded-lg"><i class="fa-solid fa-circle-check text-oceanbrand-400 text-[10px]"></i> <span class="font-black text-iceblue-900">Rupesh Praharaj</span></li>
+                  <li class="feature-item-pop flex items-center gap-2 p-1.5 rounded-lg"><i class="fa-solid fa-circle-check text-oceanbrand-400 text-[10px]"></i> <span class="font-black text-iceblue-900">RpGaurav</span></li>
+                  <li class="feature-item-pop flex items-center gap-2 p-1.5 rounded-lg"><i class="fa-solid fa-circle-check text-oceanbrand-400 text-[10px]"></i> <span class="font-black text-iceblue-900">Subrat Kumar Ojha</span></li>
+                </ul>
+              </div>
+              <div class="pt-4 mt-4 border-t border-iceblue-200 text-[10px] text-iceblue-400 font-mono font-bold">
+                HTML5 • CSS3 • SQL • Next.js
+              </div>
+            </div>
+
+            <div class="liquid-pop-glow p-6 rounded-[2.4rem] liquid-prism-rim flex flex-col justify-between shadow-md">
+              <div>
+                <div class="w-10 h-10 rounded-xl cyan-icon-orb flex items-center justify-center mb-4 text-base icon-pop-badge">
+                  <i class="fa-solid fa-server"></i>
+                </div>
+                <h4 class="font-display font-black text-base text-iceblue-900">Backend Engineering</h4>
+                <p class="text-[11px] text-oceanbrand-400 font-bold mb-3">APIs, Security & Logic</p>
+                <ul class="space-y-2 text-xs text-iceblue-800 font-bold">
+                  <li class="feature-item-pop flex items-center gap-2 p-1.5 rounded-lg"><i class="fa-solid fa-circle-check text-oceanbrand-400 text-[10px]"></i> <span class="font-black text-iceblue-900">Asutosh Behera</span></li>
+                  <li class="feature-item-pop flex items-center gap-2 p-1.5 rounded-lg"><i class="fa-solid fa-circle-check text-oceanbrand-400 text-[10px]"></i> <span class="font-black text-iceblue-900">Satya Muduli</span></li>
+                </ul>
+              </div>
+              <div class="pt-4 mt-4 border-t border-iceblue-200 text-[10px] text-iceblue-400 font-mono font-bold">
+                Node.js • Express • REST APIs
+              </div>
+            </div>
+
+            <div class="liquid-pop-glow p-6 rounded-[2.4rem] liquid-prism-rim flex flex-col justify-between shadow-md">
+              <div>
+                <div class="w-10 h-10 rounded-xl cyan-icon-orb flex items-center justify-center mb-4 text-base icon-pop-badge">
+                  <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <h4 class="font-display font-black text-base text-iceblue-900">UI/UX & Product Design</h4>
+                <p class="text-[11px] text-oceanbrand-400 font-bold mb-3">Design Systems & Wireframes</p>
+                <ul class="space-y-2 text-xs text-iceblue-800 font-bold">
+                  <li class="feature-item-pop flex items-center gap-2 p-1.5 rounded-lg"><i class="fa-solid fa-circle-check text-oceanbrand-400 text-[10px]"></i> <span class="font-black text-iceblue-900">Shrabani Shukla</span></li>
+                  <li class="feature-item-pop flex items-center gap-2 p-1.5 rounded-lg"><i class="fa-solid fa-circle-check text-oceanbrand-400 text-[10px]"></i> <span class="font-black text-iceblue-900">Suman Pati</span></li>
+                </ul>
+              </div>
+              <div class="pt-4 mt-4 border-t border-iceblue-200 text-[10px] text-iceblue-400 font-mono font-bold">
+                Figma • Glassmorphism • Ergonomics
+              </div>
+            </div>
+
+            <div class="liquid-pop-glow p-6 rounded-[2.4rem] liquid-prism-rim flex flex-col justify-between shadow-md">
+              <div>
+                <div class="w-10 h-10 rounded-xl cyan-icon-orb flex items-center justify-center mb-4 text-base icon-pop-badge">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <h4 class="font-display font-black text-base text-iceblue-900">Growth & Finance</h4>
+                <p class="text-[11px] text-oceanbrand-400 font-bold mb-3">Marketing & Fiscal Control</p>
+                <ul class="space-y-2 text-xs text-iceblue-800 font-bold">
+                  <li class="feature-item-pop flex items-start gap-2 p-1.5 rounded-lg">
+                    <i class="fa-solid fa-bullhorn text-oceanbrand-400 text-[10px] mt-1"></i>
+                    <div>
+                      <span class="font-black text-iceblue-900 block">Shubhranshu Sekhar Sahoo</span>
+                      <span class="text-[10px] text-iceblue-400">Marketing & Outreach</span>
+                    </div>
+                  </li>
+                  <li class="feature-item-pop flex items-start gap-2 p-1.5 rounded-lg">
+                    <i class="fa-solid fa-receipt text-oceanbrand-400 text-[10px] mt-1"></i>
+                    <div>
+                      <span class="font-black text-iceblue-900 block">Biswajit Sahoo</span>
+                      <span class="text-[10px] text-iceblue-400">Finance & Commercials</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="pt-4 mt-4 border-t border-iceblue-200 text-[10px] text-iceblue-400 font-mono font-bold">
+                Audits • Campaigns • Budgets
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- METRICS -->
+    <section id="metrics-impact" data-tab-panel="metrics-impact" class="page-tab-panel py-20 border-t border-iceblue-200 relative bg-[#04122c]/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="liquid-pop-glow p-6 rounded-3xl liquid-glass-slab shadow-md">
+            <div class="font-display font-black text-4xl sm:text-5xl text-oceanbrand-400 count-up-number" data-target="99.9" data-suffix="%" data-decimals="1">99.9%</div>
+            <div class="text-xs font-black text-iceblue-900 uppercase tracking-wider mt-2">Uptime Reliability SLA</div>
+            <p class="text-[11px] text-iceblue-800 mt-1 font-bold">Zero downtime cloud redundancy</p>
+          </div>
+          <div class="liquid-pop-glow p-6 rounded-3xl liquid-glass-slab shadow-md">
+            <div class="font-display font-black text-4xl sm:text-5xl text-oceanbrand-300 count-up-number" data-target="0.8" data-prefix="< " data-suffix="s" data-decimals="1">&lt; 0.8s</div>
+            <div class="text-xs font-black text-iceblue-900 uppercase tracking-wider mt-2">Core Web Vitals</div>
+            <p class="text-[11px] text-iceblue-800 mt-1 font-bold">Sub-second First Contentful Paint</p>
+          </div>
+          <div class="liquid-pop-glow p-6 rounded-3xl liquid-glass-slab shadow-md">
+            <div class="font-display font-black text-4xl sm:text-5xl text-oceanbrand-400 count-up-number" data-target="50" data-suffix="+" data-decimals="0">50+</div>
+            <div class="text-xs font-black text-iceblue-900 uppercase tracking-wider mt-2">Deployments Shipped</div>
+            <p class="text-[11px] text-iceblue-800 mt-1 font-bold">Trusted across India and globally</p>
+          </div>
+          <div class="liquid-pop-glow p-6 rounded-3xl liquid-glass-slab shadow-md">
+            <div class="font-display font-black text-4xl sm:text-5xl text-oceanbrand-300 count-up-number" data-target="100" data-suffix="%" data-decimals="0">100%</div>
+            <div class="text-xs font-black text-iceblue-900 uppercase tracking-wider mt-2">Clean Handcrafted Code</div>
+            <p class="text-[11px] text-iceblue-800 mt-1 font-bold">Zero bloatware or unneeded dependencies</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (CONTACT TAB) -->
+    <section id="contact" data-tab-panel="contact" class="page-tab-panel py-24 border-t border-iceblue-200 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <div class="lg:col-span-5 space-y-6">
+            <div>
+              <div class="liquid-pop-glow inline-flex items-center gap-2 px-4 py-1.5 rounded-full liquid-glass-pill text-oceanbrand-300 text-xs font-bold mb-3 shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-oceanbrand-400 shadow-[0_0_8px_#00d2ff]"></span>
+                <span class="uppercase tracking-wider">Initiate Consultation</span>
+              </div>
+              <h2 class="font-display font-black text-3xl sm:text-5xl text-iceblue-900 tracking-tight">
+                Your Idea Deserves to <span class="cyan-gradient-text">Become Reality.</span>
+              </h2>
+              <p class="text-iceblue-800 text-sm mt-3 leading-relaxed font-semibold">
+                Every enquiry is registered, allocated a unique reference ID, and acknowledged within 4 business hours.
+              </p>
+            </div>
+
+            <div class="space-y-3.5">
+              <a href="tel:8260860014" class="liquid-pop-glow flex items-center gap-4 p-4 rounded-2xl liquid-prism-rim group shadow-sm">
+                <div class="w-12 h-12 rounded-xl cyan-icon-orb flex items-center justify-center text-lg icon-pop-badge">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <div class="text-[11px] text-iceblue-400 font-bold">Business Phone (Mon - Sat)</div>
+                  <div class="text-sm font-black text-iceblue-900 group-hover:text-oceanbrand-400">8260860014</div>
+                  <div class="text-[10px] text-iceblue-400 font-semibold">Direct line to technical solutions advisor</div>
+                </div>
+              </a>
+
+              <a href="https://wa.me/918260860014?text=Hi%20Visionity%20Team%2C%20I%20want%20to%20get%20a%20quote%20for%20a%20project." target="_blank" rel="noopener noreferrer" class="liquid-pop-glow flex items-center gap-4 p-4 rounded-2xl liquid-prism-rim group shadow-sm">
+                <div class="w-12 h-12 rounded-xl cyan-icon-orb flex items-center justify-center text-xl icon-pop-badge">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <div class="text-[11px] text-iceblue-400 font-bold">Instant Scoping</div>
+                  <div class="text-sm font-black text-iceblue-900 group-hover:text-oceanbrand-300">Chat on WhatsApp (8260860014)</div>
+                  <div class="text-[10px] text-iceblue-400 font-semibold">Quick answers for project scoping</div>
+                </div>
+              </a>
+
+              <a href="mailto:sahoosuchismita810@gmail.com" class="liquid-pop-glow flex items-center gap-4 p-4 rounded-2xl liquid-prism-rim group shadow-sm">
+                <div class="w-12 h-12 rounded-xl cyan-icon-orb flex items-center justify-center text-lg icon-pop-badge">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <div class="text-[11px] text-iceblue-400 font-bold">Official Email</div>
+                  <div class="text-sm font-black text-iceblue-900 group-hover:text-oceanbrand-400">sahoosuchismita810@gmail.com</div>
+                  <div class="text-[10px] text-iceblue-400 font-semibold">Send RFP & specs documents</div>
+                </div>
+              </a>
+
+              <div class="liquid-pop-glow p-4 rounded-2xl liquid-prism-rim flex items-start gap-4 shadow-sm">
+                <div class="w-12 h-12 rounded-xl cyan-icon-orb flex items-center justify-center text-lg shrink-0 icon-pop-badge">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <div class="text-[11px] text-iceblue-400 font-bold">Office & Development Hub</div>
+                  <div class="text-sm font-black text-iceblue-900">VISIONITY</div>
+                  <div class="text-xs text-iceblue-800 font-bold mt-0.5">Tangi, Cuttack, Odisha, India</div>
+                  <div class="text-[10px] text-oceanbrand-400 font-extrabold mt-1">Available for local meetings & remote sprints</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="lg:col-span-7">
+            <div class="liquid-pop-glow p-8 sm:p-10 rounded-[2.8rem] liquid-prism-rim shadow-2xl relative">
+              <div class="mb-6">
+                <h3 class="font-display font-black text-2xl text-iceblue-900">Submit Project Enquiry</h3>
+                <p class="text-xs text-iceblue-800 mt-1 font-semibold">Fill out the details to receive an itemized proposal, timeline, and architectural estimate.</p>
+              </div>
+
+              <form id="lead-enquiry-form" class="space-y-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold text-iceblue-900 mb-1.5" for="lead_name">Your Name *</label>
+                    <input type="text" id="lead_name" required placeholder="e.g. Ramesh Mohanty" 
+                      class="liquid-pop-glow cyber-input w-full px-4 py-3 rounded-2xl text-sm font-semibold focus:outline-none transition-all">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-iceblue-900 mb-1.5" for="lead_company">Company / Entity</label>
+                    <input type="text" id="lead_company" placeholder="e.g. Acme Innovations" 
+                      class="liquid-pop-glow cyber-input w-full px-4 py-3 rounded-2xl text-sm font-semibold focus:outline-none transition-all">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold text-iceblue-900 mb-1.5" for="lead_email">Work Email *</label>
+                    <input type="email" id="lead_email" required placeholder="name@company.com" 
+                      class="liquid-pop-glow cyber-input w-full px-4 py-3 rounded-2xl text-sm font-semibold focus:outline-none transition-all">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-iceblue-900 mb-1.5" for="lead_phone">Phone / WhatsApp *</label>
+                    <input type="tel" id="lead_phone" required placeholder="e.g. 8260860014" 
+                      class="liquid-pop-glow cyber-input w-full px-4 py-3 rounded-2xl text-sm font-semibold focus:outline-none transition-all">
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-iceblue-900 mb-1.5" for="lead_category">Project Category *</label>
+                  <select id="lead_category" required 
+                    class="liquid-pop-glow cyber-input w-full px-4 py-3 rounded-2xl text-sm font-semibold focus:outline-none transition-all">
+                    <option value="" disabled selected class="bg-[#051329] text-iceblue-400">Select service category...</option>
+                    <option value="Company Website" class="bg-[#051329] text-white">Company Website</option>
+                    <option value="E-commerce" class="bg-[#051329] text-white">E-Commerce Store & Checkout</option>
+                    <option value="ERP / Billing" class="bg-[#051329] text-white">ERP & Billing System</option>
+                    <option value="Custom Web Apps" class="bg-[#051329] text-white">Custom Web Apps & Cloud SaaS</option>
+                    <option value="Website Redesign" class="bg-[#051329] text-white">Existing Website Redesign & Modernization</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-iceblue-900 mb-1.5" for="lead_description">Project Overview & Requirements *</label>
+                  <textarea id="lead_description" rows="3" required placeholder="Describe your objectives, key features needed, and any reference websites..." 
+                    class="liquid-pop-glow cyber-input w-full px-4 py-3 rounded-2xl text-sm font-semibold focus:outline-none transition-all"></textarea>
+                </div>
+
+                <div class="flex items-center gap-2 pt-1">
+                  <input type="checkbox" id="lead_consent" required class="rounded text-oceanbrand-400 focus:ring-0">
+                  <label for="lead_consent" class="text-[11px] text-iceblue-800 font-bold">
+                    I agree to allow VISIONITY to contact me regarding this quotation enquiry.
+                  </label>
+                </div>
+
+                <button type="submit" id="submit-btn" class="liquid-glow-btn cyan-pill-cta w-full py-4 rounded-2xl font-black text-sm text-iceblue-50 shadow-xl transition-all flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span>Submit Project Enquiry</span>
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Success Modal Confirmation -->
+  <div id="success-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-[#020917]/80 backdrop-blur-md p-4 hidden opacity-0 transition-opacity duration-300">
+    <div id="modal-card" class="w-full max-w-md rounded-[2.5rem] liquid-prism-rim p-8 text-center shadow-2xl transition-transform duration-300 scale-95">
+      <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl cyan-icon-orb mb-4 text-2xl">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <h3 class="font-display text-2xl font-black text-iceblue-900">Enquiry Received</h3>
+      <p class="mt-2 text-sm text-iceblue-800 font-semibold">Your reference number is <strong id="lead-ref-code" class="font-mono text-oceanbrand-400"></strong>.</p>
+      <p class="mt-2 text-xs text-iceblue-800 font-semibold">Our engineering leads will review your specs and reach out within 4 business hours.</p>
+      <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+        <a id="modal-whatsapp-direct" href="https://wa.me/918260860014" target="_blank" rel="noopener noreferrer" class="liquid-glow-btn flex-1 rounded-xl bg-emerald-600 px-4 py-3 text-xs font-bold text-white hover:bg-emerald-500 flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>Continue on WhatsApp</span>
+        </a>
+        <button type="button" id="modal-done-btn" class="liquid-pop-glow flex-1 rounded-xl border border-oceanbrand-400/40 px-4 py-3 text-xs font-bold text-iceblue-900 hover:bg-oceanbrand-500/20">
+          Done
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-iceblue-200 liquid-glass-slab pt-16 pb-12 relative z-10 text-xs text-iceblue-800 font-semibold">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-iceblue-200">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3.5">
+            <div class="w-14 h-14 rounded-2xl bg-white p-1.5 shadow-sm border border-oceanbrand-400/40 flex items-center justify-center">
+              <img src="logo.jpeg" alt="Visionity Logo" class="w-full h-full object-contain rounded-lg">
+            </div>
+            <div>
+              <span class="font-brand font-extrabold text-lg text-iceblue-900 tracking-wider">VISIONITY</span>
+              <div class="text-[10px] text-oceanbrand-400 font-bold tracking-widest uppercase">Ideas • Technology • Impact</div>
+            </div>
+          </div>
+          <p class="text-iceblue-800 leading-relaxed text-xs max-w-sm font-semibold">
+            Creating meaningful digital experiences through creativity, modern web architecture, and purposeful engineering.
+          </p>
+          <div class="flex items-center space-x-3 pt-2">
+            <a href="tel:8260860014" aria-label="Call Visionity" class="liquid-pop-glow w-9 h-9 rounded-xl liquid-glass-pill flex items-center justify-center text-iceblue-900 hover:text-oceanbrand-400 transition-colors">
+              <i class="fa-solid fa-phone text-xs"></i>
+            </a>
+            <a href="https://wa.me/918260860014" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Visionity" class="liquid-pop-glow w-9 h-9 rounded-xl liquid-glass-pill flex items-center justify-center text-iceblue-900 hover:text-emerald-400 transition-colors">
+              <i class="fa-brands fa-whatsapp text-xs"></i>
+            </a>
+            <a href="mailto:sahoosuchismita810@gmail.com" aria-label="Email Visionity" class="liquid-pop-glow w-9 h-9 rounded-xl liquid-glass-pill flex items-center justify-center text-iceblue-900 hover:text-oceanbrand-400 transition-colors">
+              <i class="fa-solid fa-envelope text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <div class="font-bold text-iceblue-900 text-xs uppercase tracking-wider">Quick Links</div>
+          <ul class="space-y-2 font-bold">
+            <li><button data-nav-tab="home" class="hover:text-oceanbrand-400 transition-colors">Home Overview</button></li>
+            <li><button data-nav-tab="services" class="hover:text-oceanbrand-400 transition-colors">Services & Stack</button></li>
+            <li><button data-nav-tab="process" class="hover:text-oceanbrand-400 transition-colors">Process Framework</button></li>
+            <li><button data-nav-tab="team" class="text-oceanbrand-400 font-black hover:underline transition-colors">Our Team Members</button></li>
+            <li><button data-nav-tab="contact" class="hover:text-oceanbrand-400 transition-colors">Get a Quote</button></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="font-bold text-iceblue-900 text-xs uppercase tracking-wider">Services Catalog</div>
+          <ul class="space-y-2 font-bold">
+            <li><button data-nav-tab="services" class="hover:text-oceanbrand-400 transition-colors">Corporate Websites</button></li>
+            <li><button data-nav-tab="services" class="hover:text-oceanbrand-400 transition-colors">E-Commerce Platforms</button></li>
+            <li><button data-nav-tab="services" class="hover:text-oceanbrand-400 transition-colors">ERP & Billing Systems</button></li>
+            <li><button data-nav-tab="services" class="hover:text-oceanbrand-400 transition-colors">Custom Web Apps & SaaS</button></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="font-bold text-iceblue-900 text-xs uppercase tracking-wider">Get In Touch</div>
+          <p class="text-iceblue-800 leading-relaxed text-xs font-semibold">
+            VISIONITY<br>
+            Tangi, Cuttack, Odisha, India<br>
+            Phone: <a href="tel:8260860014" class="text-oceanbrand-400 font-extrabold hover:underline">+91 8260860014</a><br>
+            Email: <a href="mailto:sahoosuchismita810@gmail.com" class="text-oceanbrand-400 font-extrabold hover:underline">sahoosuchismita810@gmail.com</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-iceblue-800 gap-4 font-bold">
+        <div>
+          &copy; <span id="year-holder">2026</span> VISIONITY. All rights reserved.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#home" data-nav-tab="home" class="hover:text-oceanbrand-400 transition-colors">Privacy Policy</a>
+          <a href="#home" data-nav-tab="home" class="hover:text-oceanbrand-400 transition-colors">Terms & Conditions</a>
+          <button data-nav-tab="contact" class="hover:text-oceanbrand-400 transition-colors">Direct Support</button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- External Scripts -->
+  <script src="sahoo.js"></script>
+</body>
+</html>

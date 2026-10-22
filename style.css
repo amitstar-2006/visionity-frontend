@@ -1,0 +1,417 @@
+/* Graceful fallback typography: avoid dead local font files that do not exist in this project. */
+:root {
+  --cyber-navy-deep: #020917;
+  --cyber-navy-mid: #061838;
+  --cyber-cyan-bright: #00d2ff;
+  --cyber-teal-accent: #22f3c8;
+}
+
+body {
+  background-color: #020917;
+  color: #FFFFFF;
+  overflow-x: hidden;
+  font-family: 'Plus Jakarta Sans', 'Space Grotesk', 'Segoe UI', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+}
+
+/* Force crisp subpixel font rendering across all headings and text */
+h1, h2, h3, h4, h5, h6, p, span, a, button, input, select, textarea, li {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+}
+
+/* ==========================================================================
+   DEEP SAPPHIRE & ELECTRIC CYAN TEXTURED BACKGROUND (MATCHING REFERENCE)
+   ========================================================================== */
+/* Services section globe container & blending */
+#services {
+  position: relative;
+  overflow: hidden; /* Ensures the large blended globe stays neatly contained */
+}
+
+/* Larger size with seamless background blending */
+#services .absolute {
+  position: absolute;
+  top: -2rem;      /* Positioned slightly into the top corner */
+  right: -2rem;    /* Extended into the right edge for a gorgeous half-bleeding effect */
+  width: 18rem;    /* Large size (~288px on mobile) */
+  height: 18rem;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.65;   /* Balanced transparency so it acts as an ambient texture */
+  mix-blend-mode: screen; /* Blends the dark borders/stars into the sapphire background */
+  -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 85%);
+  mask-image: radial-gradient(circle at center, black 40%, transparent 85%); /* Softly fades out the edges into the background */
+}
+
+/* Responsive scaling for larger desktop viewports */
+@media (min-width: 768px) {
+  #services .absolute {
+    width: 26rem;   /* Larger display on tablets and desktops (~416px) */
+    height: 26rem;
+    top: -4rem;
+    right: -4rem;
+  }
+}
+.ice-canvas-background {
+  background-color: #020917;
+  background-image: 
+    /* Top-right luminous cyan portal glow */
+    radial-gradient(circle at 76% 16%, rgba(0, 210, 255, 0.28) 0%, rgba(0, 119, 255, 0.12) 28%, transparent 55%),
+    /* Left-side deep royal ambient glow */
+    radial-gradient(circle at 15% 32%, rgba(0, 140, 255, 0.2) 0%, transparent 48%),
+    /* Center-bottom sapphire nebula */
+    radial-gradient(ellipse at 50% 78%, rgba(0, 195, 255, 0.16) 0%, rgba(5, 28, 66, 0.35) 45%, transparent 70%),
+    /* Diagonal volumetric light streaks */
+    linear-gradient(125deg, transparent 20%, rgba(0, 210, 255, 0.06) 38%, rgba(56, 239, 125, 0.03) 42%, transparent 58%),
+    /* Base deep midnight gradient */
+    linear-gradient(180deg, #020814 0%, #051532 38%, #071b3e 68%, #020917 100%);
+}
+
+/* Volumetric Diagonal Light Beams & Glowing Orbs */
+.ambient-light-beams {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 82% 14%, rgba(0, 225, 255, 0.18) 0%, transparent 22%),
+    radial-gradient(circle at 12% 85%, rgba(0, 162, 255, 0.15) 0%, transparent 26%),
+    repeating-linear-gradient(
+      -35deg,
+      transparent 0px,
+      transparent 140px,
+      rgba(0, 210, 255, 0.025) 141px,
+      rgba(0, 210, 255, 0.05) 180px,
+      transparent 220px
+    );
+  pointer-events: none;
+}
+
+/* Fine Starlight / Tactile Grain Texture */
+.tactile-noise-layer {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.045'/%3E%3C/svg%3E");
+}
+
+/* Subtle Cyan Tech Dot Grid */
+.mesh-grid {
+  background-image: radial-gradient(rgba(0, 210, 255, 0.14) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Cyan Gradient Highlight Text (Matches "Digital Experiences", "What's Next") */
+.cyan-gradient-text {
+  background: linear-gradient(90deg, #00e5ff 0%, #38bdf8 50%, #22f3c8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 18px rgba(0, 210, 255, 0.25));
+}
+
+/* Glowing Cyan Pill CTA Button */
+.cyan-pill-cta {
+  background: linear-gradient(90deg, #00c6ff 0%, #00e5ff 55%, #1de9b6 100%);
+  color: #020b1c !important;
+  font-weight: 800;
+  box-shadow: 
+    0 0 22px rgba(0, 210, 255, 0.5),
+    inset 0 1.5px 2px rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+.cyan-pill-cta:hover {
+  background: linear-gradient(90deg, #1de9b6 0%, #00e5ff 50%, #00c6ff 100%);
+  box-shadow: 
+    0 0 32px rgba(0, 229, 255, 0.8),
+    0 12px 24px -6px rgba(0, 140, 255, 0.55);
+}
+
+/* Glowing Cyan Icon Orb inside Service & Feature Cards */
+.cyan-icon-orb {
+  background: linear-gradient(135deg, rgba(0, 210, 255, 0.25) 0%, rgba(0, 102, 255, 0.45) 100%);
+  border: 1.5px solid rgba(0, 225, 255, 0.65);
+  color: #00e5ff;
+  box-shadow: 
+    0 0 18px rgba(0, 210, 255, 0.35),
+    inset 0 0 10px rgba(0, 225, 255, 0.25);
+}
+
+#scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3.5px;
+  background: linear-gradient(90deg, #00d2ff 0%, #38bdf8 50%, #22f3c8 100%);
+  z-index: 100;
+  width: 0%;
+  box-shadow: 0 0 16px rgba(0, 210, 255, 0.95);
+  transition: width 0.08s ease-out;
+}
+
+/* ==========================================================================
+   SAPPHIRE GLASSMORPHISM SLABS & CARDS
+   ========================================================================== */
+.liquid-glass-slab {
+  background: linear-gradient(135deg, rgba(8, 30, 68, 0.78) 0%, rgba(4, 17, 42, 0.86) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1.5px solid rgba(0, 195, 255, 0.28);
+  box-shadow: 
+    inset 0 1px 2px rgba(255, 255, 255, 0.2),
+    inset 0 -1px 3px rgba(0, 180, 255, 0.15),
+    0 18px 38px -10px rgba(0, 0, 0, 0.65);
+  position: relative;
+}
+
+.liquid-prism-rim {
+  border: 1.5px solid rgba(0, 210, 255, 0.38);
+  background: linear-gradient(145deg, rgba(10, 36, 82, 0.76) 0%, rgba(5, 19, 46, 0.88) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 
+    inset 0 1.5px 2px rgba(125, 211, 252, 0.3),
+    inset 0 -1px 4px rgba(0, 210, 255, 0.15),
+    0 22px 44px -12px rgba(0, 8, 24, 0.8),
+    0 0 24px rgba(0, 150, 255, 0.12);
+}
+
+.liquid-glass-pill {
+  background: linear-gradient(135deg, rgba(11, 41, 92, 0.82) 0%, rgba(5, 21, 50, 0.9) 100%);
+  border: 1.5px solid rgba(0, 210, 255, 0.4);
+  box-shadow: 
+    inset 0 1px 2px rgba(125, 211, 252, 0.35),
+    0 6px 18px -3px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.liquid-cylinder-pill {
+  background: linear-gradient(180deg, rgba(14, 48, 105, 0.88) 0%, rgba(7, 27, 64, 0.92) 100%);
+  border: 1.5px solid rgba(0, 210, 255, 0.38);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 
+    inset 0 1px 2px rgba(125, 211, 252, 0.35),
+    0 8px 18px -4px rgba(0, 10, 30, 0.65);
+}
+
+/* Dark Sapphire Form Inputs */
+.cyber-input {
+  background: rgba(4, 16, 38, 0.85);
+  border: 1.5px solid rgba(0, 195, 255, 0.32);
+  color: #FFFFFF;
+}
+
+.cyber-input::placeholder {
+  color: #6495c7;
+}
+
+.cyber-input:focus {
+  border-color: #00e5ff;
+  box-shadow: 0 0 18px rgba(0, 229, 255, 0.35);
+}
+
+/* ==========================================================================
+   CRISP POPUP HOVER EFFECTS (ZERO TEXT BLURRINESS)
+   ========================================================================== */
+
+/* Integer-aligned vertical lift without fractional scaling keeps text 100% sharp */
+.liquid-pop-glow {
+  transition: 
+    transform 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.28s ease,
+    background-color 0.28s ease;
+}
+
+.liquid-pop-glow:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 229, 255, 0.95);
+  box-shadow: 
+    0 0 28px rgba(0, 210, 255, 0.42),
+    0 18px 36px -6px rgba(0, 8, 28, 0.85),
+    inset 0 0 16px rgba(0, 210, 255, 0.22);
+}
+
+/* Pop-up animation for buttons */
+.liquid-glow-btn {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition: 
+    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.25s ease;
+}
+
+.liquid-glow-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px -4px rgba(0, 180, 255, 0.5), 0 0 24px rgba(0, 229, 255, 0.65);
+}
+
+.liquid-glow-btn:active {
+  transform: translateY(-1px);
+}
+
+/* Pop-up animation for service images */
+.service-image-frame {
+  transition: 
+    transform 0.38s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.38s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.3s ease;
+}
+
+.service-sticky-card:hover .service-image-frame,
+.service-image-frame:hover {
+  transform: translateY(-6px) scale(1.03);
+  border-color: #00e5ff;
+  box-shadow: 0 20px 38px -8px rgba(0, 210, 255, 0.45);
+}
+
+.service-image-frame img {
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.service-image-frame:hover img {
+  transform: scale(1.06);
+}
+
+/* Pop-up badge icons inside cards */
+.icon-pop-badge {
+  transition: transform 0.34s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+.liquid-pop-glow:hover .icon-pop-badge {
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 0 24px rgba(0, 229, 255, 0.65);
+}
+
+/* Interactive feature checklist items & team rows */
+.feature-item-pop {
+  transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.24s ease, box-shadow 0.24s ease;
+}
+
+.feature-item-pop:hover {
+  transform: translateY(-2px) translateX(4px);
+  background-color: rgba(0, 210, 255, 0.14);
+  box-shadow: 0 6px 14px -4px rgba(0, 210, 255, 0.25);
+}
+
+/* Navigation HUD hover label pop */
+.hud-dot-link:hover .hud-dot-label {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hud-dot-link:hover .hud-dot-indicator {
+  transform: scale(1.35);
+}
+
+/* ==========================================================================
+   TAB PANEL & PAGE ENTER TRANSITIONS
+   ========================================================================== */
+
+/* Hidden panel state */
+.page-tab-panel {
+  display: none !important;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Active reveal state */
+.page-tab-panel.active {
+  display: block !important;
+  visibility: visible;
+  animation: pageFadeSlideIn 0.42s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes pageFadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.page-tab-panel.active .service-sticky-card,
+.page-tab-panel.active .grid > div,
+.page-tab-panel.active h1,
+.page-tab-panel.active h2 {
+  animation: panelContentRise 0.48s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.page-tab-panel.active .grid > div:nth-child(1) { animation-delay: 0.04s; }
+.page-tab-panel.active .grid > div:nth-child(2) { animation-delay: 0.08s; }
+.page-tab-panel.active .grid > div:nth-child(3) { animation-delay: 0.12s; }
+.page-tab-panel.active .grid > div:nth-child(4) { animation-delay: 0.16s; }
+
+@keyframes panelContentRise {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Infinite Marquee Animation */
+@keyframes marqueeMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: marqueeMove 38s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.marquee-mask {
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+.service-sticky-card {
+  position: sticky;
+  top: 105px;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #020917;
+}
+::-webkit-scrollbar-thumb {
+  background: #0077ff;
+  border-radius: 9999px;
+  border: 2px solid #020917;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00d2ff;
+}
