@@ -30,35 +30,36 @@ h1, h2, h3, h4, h5, h6, p, span, a, button, input, select, textarea, li {
    DEEP SAPPHIRE & ELECTRIC CYAN TEXTURED BACKGROUND (MATCHING REFERENCE)
    ========================================================================== */
 /* Services section globe container & blending */
-#services {
+/*#services {
   position: relative;
-  overflow: hidden; /* Ensures the large blended globe stays neatly contained */
-}
+  overflow: hidden;}*/
 
 /* Larger size with seamless background blending */
+/*
 #services .absolute {
   position: absolute;
-  top: -2rem;      /* Positioned slightly into the top corner */
-  right: -2rem;    /* Extended into the right edge for a gorgeous half-bleeding effect */
-  width: 18rem;    /* Large size (~288px on mobile) */
+  top: -2rem;
+  right: -2rem;
+  width: 18rem;
   height: 18rem;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.65;   /* Balanced transparency so it acts as an ambient texture */
-  mix-blend-mode: screen; /* Blends the dark borders/stars into the sapphire background */
+  opacity: 0.65;
+  mix-blend-mode: screen;
   -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 85%);
-  mask-image: radial-gradient(circle at center, black 40%, transparent 85%); /* Softly fades out the edges into the background */
+  mask-image: radial-gradient(circle at center, black 40%, transparent 85%);
 }
+*/
+
 
 /* Responsive scaling for larger desktop viewports */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   #services .absolute {
-    width: 26rem;   /* Larger display on tablets and desktops (~416px) */
+    width: 26rem;   
     height: 26rem;
-    top: -4rem;
-    right: -4rem;
-  }
-}
+    top:-4rem;
+    right:-4rem;}
+}*/
 .ice-canvas-background {
   background-color: #020917;
   background-image: 
