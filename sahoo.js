@@ -177,11 +177,36 @@ function initCyberCanvas() {
   draw();
 }
 
+function initScrollReveals() {
+  const elements = document.querySelectorAll('#process [data-scroll-reveal], #team [data-scroll-reveal]');
+  elements.forEach(element => element.classList.add('scroll-reveal'));
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+    elements.forEach(element => element.classList.add('is-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.15,
+    rootMargin: '0px 0px -8% 0px'
+  });
+
+  elements.forEach(element => observer.observe(element));
+}
+
 /* ==========================================================================
    5. EVENT LISTENERS
    ========================================================================== */
 document.addEventListener('DOMContentLoaded', () => {
   initCyberCanvas();
+  initScrollReveals();
 
   // Navigation tabs
   document.querySelectorAll('[data-nav-tab]').forEach(tab => {
